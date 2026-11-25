@@ -34,19 +34,19 @@
   <path d="M1 38V13a12 12 0 0 1 12-12h874a12 12 0 0 1 12 12V38z" fill="url(#bar)"/>
   <line x1="1" y1="38.5" x2="899" y2="38.5" class="frame"/>
   <circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
-  <text x="450" y="24" text-anchor="middle" class="muted" font-size="12">shlok@lucknow: ~/theshloksschauhan</text>
+  <text x="450" y="24" text-anchor="middle" class="muted" font-size="12">shlok@india: ~/theshloksschauhan</text>
   <text x="880" y="24" text-anchor="end" class="dim" font-size="11">session #1</text>
 
   <rect x="24" y="56" width="460" height="72" rx="10" class="card" stroke-width="1.2"/>
   <text x="42" y="86" class="accent" font-size="17">✻ <tspan class="fg" font-weight="bold" font-size="16">Welcome back, Shlok!</tspan></text>
-  <text x="42" y="111" class="muted" font-size="12">23 repos · 8 followers · ★ 3 · Thu 26 Nov 2026</text>
+  <text x="42" y="111" class="muted" font-size="12">20 repos · 8 followers · ★ 3 · Thu 26 Nov 2026</text>
   <text x="512" y="66" class="dim" font-size="11">languages across my repos</text>
-  <g clip-path="url(#langclip)"><rect x="512.0" y="78" width="196.0" height="8" fill="#3776AB"/><rect x="710.0" y="78" width="106.0" height="8" fill="#F7DF1E"/><rect x="818.0" y="78" width="16.0" height="8" fill="#00599C"/><rect x="836.0" y="78" width="16.0" height="8" fill="#663399"/><rect x="854.0" y="78" width="16.0" height="8" fill="#00ADD8"/></g>
-  <circle cx="516" cy="106" r="3.5" fill="#3776AB"/><text x="523" y="110" class="muted" font-size="11">Python</text><circle cx="583" cy="106" r="3.5" fill="#F7DF1E"/><text x="590" y="110" class="muted" font-size="11">JavaScript</text><circle cx="677" cy="106" r="3.5" fill="#00599C"/><text x="684" y="110" class="muted" font-size="11">C++</text><circle cx="724" cy="106" r="3.5" fill="#663399"/><text x="731" y="110" class="muted" font-size="11">CSS</text><circle cx="771" cy="106" r="3.5" fill="#00ADD8"/><text x="778" y="110" class="muted" font-size="11">Go</text>
+  <g clip-path="url(#langclip)"><rect x="512.0" y="78" width="206.4" height="8" fill="#3776AB"/><rect x="720.4" y="78" width="92.7" height="8" fill="#F7DF1E"/><rect x="815.2" y="78" width="16.9" height="8" fill="#00599C"/><rect x="834.1" y="78" width="16.9" height="8" fill="#00ADD8"/><rect x="853.1" y="78" width="16.9" height="8" fill="#2496ED"/></g>
+  <circle cx="516" cy="106" r="3.5" fill="#3776AB"/><text x="523" y="110" class="muted" font-size="11">Python</text><circle cx="583" cy="106" r="3.5" fill="#F7DF1E"/><text x="590" y="110" class="muted" font-size="11">JavaScript</text><circle cx="677" cy="106" r="3.5" fill="#00599C"/><text x="684" y="110" class="muted" font-size="11">C++</text><circle cx="724" cy="106" r="3.5" fill="#00ADD8"/><text x="731" y="110" class="muted" font-size="11">Go</text><circle cx="764" cy="106" r="3.5" fill="#2496ED"/><text x="771" y="110" class="muted" font-size="11">Dockerfile</text>
 
 <g class="in" style="animation-delay:0.20s"><text x="28" y="172" class="muted"><tspan class="accent">❯</tspan> <tspan class="fg" font-weight="bold">whoami</tspan></text></g>
 <g class="in" style="animation-delay:0.26s"><text x="28" y="193" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Bash</tspan><tspan class="dim">(</tspan>whoami --verbose<tspan class="dim">)</tspan></text></g>
-<g class="in" style="animation-delay:0.32s"><text x="44" y="214" class="dim">⎿</text><text x="66" y="214" class="fg">AI engineer · Lucknow, India</text></g>
+<g class="in" style="animation-delay:0.32s"><text x="44" y="214" class="dim">⎿</text><text x="66" y="214" class="fg">AI engineer · India</text></g>
 <g class="in" style="animation-delay:0.38s"><text x="66" y="235" class="muted">I build LLM agents, retrieval systems and backend services.</text></g>
 <g class="in" style="animation-delay:0.44s"><text x="66" y="256" class="muted">Most of my time goes to the unglamorous parts: evals, guardrails,</text></g>
 <g class="in" style="animation-delay:0.50s"><text x="66" y="277" class="muted">cost control and failure handling.</text></g>
@@ -57,7 +57,7 @@
 <g class="in" style="animation-delay:0.80s"><text x="66" y="394" class="muted"><tspan class="accent">Failing safely         </tspan>guardrails, human-review gates, fail-closed services</text></g>
 <g class="in" style="animation-delay:0.86s"><text x="66" y="415" class="muted"><tspan class="accent">Proof, not vibes       </tspan>eval gates run before anything ships</text></g>
 <g class="in" style="animation-delay:0.92s"><text x="28" y="448" class="muted"><tspan class="accent">❯</tspan> <tspan class="fg" font-weight="bold">ls ~/featured</tspan></text></g>
-<g class="in" style="animation-delay:0.98s"><text x="28" y="469" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Bash</tspan><tspan class="dim">(</tspan>ls ~/featured<tspan class="dim">)</tspan></text><text x="872" y="469" text-anchor="end" class="dim" font-size="12">7 of 23 repos</text></g>
+<g class="in" style="animation-delay:0.98s"><text x="28" y="469" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Bash</tspan><tspan class="dim">(</tspan>ls ~/featured<tspan class="dim">)</tspan></text><text x="872" y="469" text-anchor="end" class="dim" font-size="12">7 of 20 repos</text></g>
 <g class="in" style="animation-delay:1.04s"><text x="44" y="490" class="dim">⎿</text><text x="66" y="490" class="fg"><tspan class="accent" font-weight="bold">coverwise</tspan></text><text x="872" y="490" text-anchor="end" class="dim" font-size="12">Python · LangGraph · ChromaDB · K8s</text></g>
 <g class="in" style="animation-delay:1.10s"><text x="66" y="509" class="muted">Cited Medicare coverage agent: hybrid RAG, PII guardrails, eval gate</text></g>
 <g class="in" style="animation-delay:1.16s"><text x="66" y="535" class="fg"><tspan class="accent" font-weight="bold">support-triage</tspan></text><text x="872" y="535" text-anchor="end" class="dim" font-size="12">Python · SQLite</text></g>

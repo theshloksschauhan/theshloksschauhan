@@ -34,7 +34,7 @@ LANG_COLORS = {
 }
 
 ABOUT = [
-    "AI engineer · Lucknow, India",
+    "AI engineer · India",
     "I build LLM agents, retrieval systems and backend services.",
     "Most of my time goes to the unglamorous parts: evals, guardrails,",
     "cost control and failure handling.",
@@ -296,7 +296,7 @@ def build(pushes, langs, stats, today):
   <path d="M1 38V13a12 12 0 0 1 12-12h{W - 26}a12 12 0 0 1 12 12V38z" fill="url(#bar)"/>
   <line x1="1" y1="38.5" x2="{W - 1}" y2="38.5" class="frame"/>
   <circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
-  <text x="{W // 2}" y="24" text-anchor="middle" class="muted" font-size="12">shlok@lucknow: ~/theshloksschauhan</text>
+  <text x="{W // 2}" y="24" text-anchor="middle" class="muted" font-size="12">shlok@india: ~/theshloksschauhan</text>
   <text x="{W - 20}" y="24" text-anchor="end" class="dim" font-size="11">session #{session}</text>
 
   <rect x="{PAD - 4}" y="56" width="460" height="72" rx="10" class="card" stroke-width="1.2"/>
