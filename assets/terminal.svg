@@ -1,73 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="412" viewBox="0 0 860 412" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="15">
   <style>
-    .muted { fill: #8b8b8b; }
-    .fg { fill: #e6e6e6; }
-    .accent { fill: #D97757; }
-    .green { fill: #7cc47f; }
+    .muted { fill: #8b8b8b; } .fg { fill: #e6e6e6; } .accent { fill: #D97757; } .green { fill: #7cc47f; }
     .w { opacity: 0; animation: word 24s infinite; }
-    @keyframes word { 0%, 8.3% { opacity: 1; } 8.4%, 100% { opacity: 0; } }
+    @keyframes word { 0%, 8.23% { opacity: 1; } 8.33%, 100% { opacity: 0; } }
     .g { opacity: 0; animation: glyph 1.2s infinite; }
     @keyframes glyph { 0%, 16.6% { opacity: 1; } 16.7%, 100% { opacity: 0; } }
     .shimmer { animation: shim 2s ease-in-out infinite; }
     @keyframes shim { 0%, 100% { fill: #D97757; } 50% { fill: #f0b49c; } }
     .caret { animation: blink 1s steps(1) infinite; }
     @keyframes blink { 50% { opacity: 0; } }
-    .type { clip-path: inset(0 100% 0 0); animation: typing 3s steps(34) 0.5s forwards; }
-    @keyframes typing { to { clip-path: inset(0 0 0 0); } }
-    .count { animation: tick 24s steps(24) infinite; }
   </style>
+  <rect width="860" height="412" rx="12" fill="#1a1a1a"/>
+  <rect width="860" height="36" rx="12" fill="#262626"/><rect y="24" width="860" height="12" fill="#262626"/>
+  <circle cx="22" cy="18" r="6" fill="#ff5f57"/><circle cx="42" cy="18" r="6" fill="#febc2e"/><circle cx="62" cy="18" r="6" fill="#28c840"/>
+  <text x="430" y="23" text-anchor="middle" class="muted" font-size="13">shlok@lucknow: ~/theshloksschauhan — session #1</text>
 
-  <!-- window -->
-  <rect width="860" height="330" rx="12" fill="#1a1a1a"/>
-  <rect width="860" height="36" rx="12" fill="#262626"/>
-  <rect y="24" width="860" height="12" fill="#262626"/>
-  <circle cx="22" cy="18" r="6" fill="#ff5f57"/>
-  <circle cx="42" cy="18" r="6" fill="#febc2e"/>
-  <circle cx="62" cy="18" r="6" fill="#28c840"/>
-  <text x="430" y="23" text-anchor="middle" class="muted" font-size="13">shlok@lucknow: ~/theshloksschauhan</text>
-
-  <!-- welcome card -->
   <rect x="24" y="52" width="420" height="62" rx="8" fill="none" stroke="#D97757" stroke-width="1.2"/>
-  <text x="42" y="78" class="accent">✻ <tspan class="fg" font-weight="bold">Welcome, Shlok!</tspan></text>
-  <text x="42" y="100" class="muted" font-size="13">cwd: ~/agents · evals · guardrails · retrieval</text>
+  <text x="42" y="78" class="accent">✻ <tspan class="fg" font-weight="bold">Welcome back, Shlok!</tspan></text>
+  <text x="42" y="100" class="muted" font-size="13">Thu 26 Nov 2026 · live from the GitHub API</text>
+  <text x="470" y="58" class="muted" font-size="11">languages across my repos</text>
+  <rect x="470.0" y="66" width="192.6" height="10" fill="#3776AB"/><rect x="662.6" y="66" width="115.6" height="10" fill="#F7DF1E"/><rect x="778.2" y="66" width="19.3" height="10" fill="#00599C"/><rect x="797.5" y="66" width="19.3" height="10" fill="#663399"/><rect x="816.7" y="66" width="19.3" height="10" fill="#00ADD8"/>
+  <circle cx="474" cy="97" r="4" fill="#3776AB"/><text x="482" y="101" class="muted" font-size="11">Python</text><circle cx="544" cy="97" r="4" fill="#F7DF1E"/><text x="552" y="101" class="muted" font-size="11">JavaScript</text><circle cx="642" cy="97" r="4" fill="#00599C"/><text x="650" y="101" class="muted" font-size="11">C++</text><circle cx="691" cy="97" r="4" fill="#663399"/><text x="699" y="101" class="muted" font-size="11">CSS</text><circle cx="740" cy="97" r="4" fill="#00ADD8"/><text x="748" y="101" class="muted" font-size="11">Go</text>
 
-  <!-- user prompt -->
-  <text x="24" y="146" class="muted">&gt; <tspan class="fg">build an agent that knows when to say "I don't know"</tspan></text>
+  <text x="24" y="146" class="muted">&gt; <tspan class="fg">what did Shlok ship recently?</tspan></text>
+  <text x="24" y="176" class="green">⏺ <tspan class="fg">Push</tspan><tspan class="muted">(careeros-ai-job-platform)</tspan></text><text x="24" y="196" class="muted">  ⎿  Validate LLM output with Pydantic; replace silent mock fallback with explicit D…</text><text x="24" y="222" class="green">⏺ <tspan class="fg">Push</tspan><tspan class="muted">(multi-domain-support-triage)</tspan></text><text x="24" y="242" class="muted">  ⎿  Fix company tagging when a parent folder is named claude/visa/hackerrank</text><text x="24" y="268" class="green">⏺ <tspan class="fg">Push</tspan><tspan class="muted">(distrocache-distributed-kv)</tspan></text><text x="24" y="288" class="muted">  ⎿  fix: checker runner retries a transient /metrics poll and never exits 0 without…</text>
 
-  <!-- tool call -->
-  <text x="24" y="176" class="green">⏺ <tspan class="fg">Read</tspan><tspan class="muted">(coverwise/retrieval/hybrid.py)</tspan></text>
-  <text x="24" y="198" class="muted">  ⎿  BM25 + ChromaDB · citations on · eval gate passed ✓</text>
+  <g class="accent" font-size="16"><text x="24" y="328" class="g" style="animation-delay:-0.0s">·</text><text x="24" y="328" class="g" style="animation-delay:-0.2s">✢</text><text x="24" y="328" class="g" style="animation-delay:-0.4s">✳</text><text x="24" y="328" class="g" style="animation-delay:-0.6s">✶</text><text x="24" y="328" class="g" style="animation-delay:-0.8s">✻</text><text x="24" y="328" class="g" style="animation-delay:-1.0s">✽</text></g>
+  <g class="shimmer" font-weight="bold"><text x="46" y="328" class="w" style="animation-delay:-0s">Brewing…</text><text x="46" y="328" class="w" style="animation-delay:-22s">Backpropagating…</text><text x="46" y="328" class="w" style="animation-delay:-20s">Containerizing…</text><text x="46" y="328" class="w" style="animation-delay:-18s">Deploying…</text><text x="46" y="328" class="w" style="animation-delay:-16s">Daydreaming…</text><text x="46" y="328" class="w" style="animation-delay:-14s">Reticulating…</text><text x="46" y="328" class="w" style="animation-delay:-12s">Castling…</text><text x="46" y="328" class="w" style="animation-delay:-10s">Replicating…</text><text x="46" y="328" class="w" style="animation-delay:-8s">Caffeinating…</text><text x="46" y="328" class="w" style="animation-delay:-6s">Calibrating…</text><text x="46" y="328" class="w" style="animation-delay:-4s">Pondering…</text><text x="46" y="328" class="w" style="animation-delay:-2s">Compiling…</text></g>
+  <text x="230" y="328" class="muted" font-size="13">(esc to interrupt · ↑ 3.4k tokens)</text>
 
-  <!-- spinner line: glyph -->
-  <g class="accent" font-size="16">
-    <text x="24" y="236" class="g" style="animation-delay:0s">·</text>
-    <text x="24" y="236" class="g" style="animation-delay:-1.0s">✢</text>
-    <text x="24" y="236" class="g" style="animation-delay:-0.8s">✳</text>
-    <text x="24" y="236" class="g" style="animation-delay:-0.6s">✶</text>
-    <text x="24" y="236" class="g" style="animation-delay:-0.4s">✻</text>
-    <text x="24" y="236" class="g" style="animation-delay:-0.2s">✽</text>
-  </g>
-
-  <!-- spinner line: cycling words -->
-  <g class="shimmer" font-weight="bold">
-    <text x="46" y="236" class="w" style="animation-delay:0s">Thinking…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-22s">Retrieving…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-20s">Grounding…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-18s">Pondering…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-16s">Evaluating…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-14s">Guardrailing…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-12s">Shipping…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-10s">Brewing…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-8s">Hashing…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-6s">Cascading…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-4s">Reticulating…</text>
-    <text x="46" y="236" class="w" style="animation-delay:-2s">Moonwalking…</text>
-  </g>
-  <text x="200" y="236" class="muted" font-size="13">(esc to interrupt · ↑ 2.4k tokens)</text>
-
-  <!-- input box -->
-  <rect x="24" y="258" width="812" height="44" rx="8" fill="none" stroke="#4a4a4a" stroke-width="1.2"/>
-  <text x="40" y="285" class="fg">&gt; <tspan class="muted">open to AI engineering roles · ssschauhan.me</tspan></text>
-  <rect x="472" y="271" width="9" height="18" fill="#e6e6e6" class="caret"/>
-  <text x="836" y="320" text-anchor="end" class="muted" font-size="11">? for shortcuts</text>
+  <rect x="24" y="350" width="812" height="44" rx="8" fill="none" stroke="#4a4a4a" stroke-width="1.2"/>
+  <text x="40" y="377" class="fg">&gt; <tspan class="muted">open to AI engineering roles · ssschauhan.me</tspan></text>
+  <rect x="472" y="363" width="9" height="18" fill="#e6e6e6" class="caret"/>
+  <text x="836" y="402" text-anchor="end" class="muted" font-size="11">auto-rebuilt daily by GitHub Actions</text>
 </svg>
