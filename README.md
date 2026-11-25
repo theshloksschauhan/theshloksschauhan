@@ -1,5 +1,8 @@
 <div align="center">
 
+<img src="./assets/terminal.svg" alt="Animated terminal showing a coding agent at work" width="100%">
+
+
 # Hi, I'm Shlok 👋
 
 **AI engineer · Lucknow, India**
