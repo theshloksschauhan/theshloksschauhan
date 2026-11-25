@@ -29,8 +29,10 @@ WORDS = [
 ]
 GLYPHS = ["·", "✢", "✳", "✶", "✻", "✽"]
 LANG_COLORS = {
-    "Python": "#3776AB", "JavaScript": "#F7DF1E", "TypeScript": "#3178C6", "C++": "#00599C",
-    "Go": "#00ADD8", "HTML": "#E34F26", "CSS": "#663399", "Dockerfile": "#2496ED",
+    # GitHub linguist colors, the same dots GitHub shows on repo pages
+    "Python": "#3572A5", "JavaScript": "#f1e05a", "TypeScript": "#3178c6", "C++": "#f34b7d",
+    "Go": "#00ADD8", "HTML": "#e34c26", "CSS": "#663399", "Dockerfile": "#384d54",
+    "Shell": "#89e051", "Jupyter Notebook": "#DA5B0B", "Java": "#b07219", "C": "#555555",
 }
 
 ABOUT = [
@@ -243,7 +245,7 @@ def build(pushes, langs, stats, today):
     bar, x, legend, lx = [], float(bx0), [], bx0
     for name, c in langs:
         w = bw * c / total
-        color = LANG_COLORS.get(name, "#8b8b8b")
+        color = LANG_COLORS.get(name, "#8b949e")
         bar.append(f'<rect x="{x:.1f}" y="78" width="{max(w - 2, 1):.1f}" height="8" fill="{color}"/>')
         legend.append(
             f'<circle cx="{lx + 4}" cy="106" r="3.5" fill="{color}"/>'
@@ -263,21 +265,23 @@ def build(pushes, langs, stats, today):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{height}" viewBox="0 0 {W} {height}" font-family="ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14">
   <defs>
     <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="s1"/><stop offset="1" class="s2"/></linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D97757" stop-opacity=".16"/><stop offset=".6" stop-color="#D97757" stop-opacity="0"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f81f7" stop-opacity=".16"/><stop offset=".6" stop-color="#2f81f7" stop-opacity="0"/></linearGradient>
     <clipPath id="langclip"><rect x="{bx0}" y="78" width="{bw}" height="8" rx="4"/></clipPath>
   </defs>
   <style>
     text {{ white-space: pre; }}
-    .bg {{ fill: #141414; }} .frame {{ stroke: #2e2e2e; }} .s1 {{ stop-color: #2a2a2a; }} .s2 {{ stop-color: #222222; }}
-    .muted {{ fill: #a3a3a3; }} .dim {{ fill: #6b6b6b; }} .fg {{ fill: #f2f2f2; }}
-    .accent {{ fill: #E08A6A; }} .green {{ fill: #7cc47f; }}
-    .chip {{ fill: #212121; stroke: #333333; }} .box {{ stroke: #3d3d3d; }} .card {{ fill: url(#glow); stroke: #D97757; }}
-    .cursor {{ fill: #f2f2f2; }}
+    /* GitHub Primer palette: dark (default) and light */
+    .bg {{ fill: #0d1117; }} .frame {{ stroke: #30363d; }} .s1 {{ stop-color: #161b22; }} .s2 {{ stop-color: #161b22; }}
+    .muted {{ fill: #9198a1; }} .dim {{ fill: #656c76; }} .fg {{ fill: #f0f6fc; }}
+    .accent {{ fill: #4493f8; }} .green {{ fill: #3fb950; }}
+    .chip {{ fill: #151b23; stroke: #3d444d; }} .box {{ stroke: #3d444d; }} .card {{ fill: url(#glow); stroke: #1f6feb; }}
+    .cursor {{ fill: #f0f6fc; }}
     @media (prefers-color-scheme: light) {{
-      .bg {{ fill: #fbfaf8; }} .frame {{ stroke: #e2ded8; }} .s1 {{ stop-color: #f1eee9; }} .s2 {{ stop-color: #ebe7e1; }}
-      .muted {{ fill: #5c5c5c; }} .dim {{ fill: #9a9690; }} .fg {{ fill: #1f1f1f; }}
-      .accent {{ fill: #C15F3C; }} .green {{ fill: #3f8f45; }}
-      .chip {{ fill: #f2efea; stroke: #e2ded8; }} .box {{ stroke: #d6d1ca; }} .cursor {{ fill: #1f1f1f; }}
+      .bg {{ fill: #ffffff; }} .frame {{ stroke: #d1d9e0; }} .s1 {{ stop-color: #f6f8fa; }} .s2 {{ stop-color: #f6f8fa; }}
+      .muted {{ fill: #59636e; }} .dim {{ fill: #818b98; }} .fg {{ fill: #1f2328; }}
+      .accent {{ fill: #0969da; }} .green {{ fill: #1a7f37; }}
+      .chip {{ fill: #f6f8fa; stroke: #d1d9e0; }} .box {{ stroke: #d1d9e0; }} .card {{ stroke: #0969da; }}
+      .cursor {{ fill: #1f2328; }}
     }}
     .in {{ opacity: 0; animation: in .4s ease-out forwards; }}
     @keyframes in {{ from {{ opacity: 0; transform: translateY(4px); }} to {{ opacity: 1; transform: none; }} }}
@@ -295,7 +299,7 @@ def build(pushes, langs, stats, today):
   <rect x=".5" y=".5" width="{W - 1}" height="{height - 1}" rx="12" class="bg frame" stroke-width="1"/>
   <path d="M1 38V13a12 12 0 0 1 12-12h{W - 26}a12 12 0 0 1 12 12V38z" fill="url(#bar)"/>
   <line x1="1" y1="38.5" x2="{W - 1}" y2="38.5" class="frame"/>
-  <circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+  <circle cx="22" cy="19" r="6" fill="#f85149"/><circle cx="42" cy="19" r="6" fill="#d29922"/><circle cx="62" cy="19" r="6" fill="#3fb950"/>
   <text x="{W // 2}" y="24" text-anchor="middle" class="muted" font-size="12">shlok@india: ~/theshloksschauhan</text>
   <text x="{W - 20}" y="24" text-anchor="end" class="dim" font-size="11">session #{session}</text>
 

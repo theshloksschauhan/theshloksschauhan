@@ -1,21 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="1259" viewBox="0 0 900 1259" font-family="ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="14">
   <defs>
     <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="s1"/><stop offset="1" class="s2"/></linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D97757" stop-opacity=".16"/><stop offset=".6" stop-color="#D97757" stop-opacity="0"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f81f7" stop-opacity=".16"/><stop offset=".6" stop-color="#2f81f7" stop-opacity="0"/></linearGradient>
     <clipPath id="langclip"><rect x="512" y="78" width="360" height="8" rx="4"/></clipPath>
   </defs>
   <style>
     text { white-space: pre; }
-    .bg { fill: #141414; } .frame { stroke: #2e2e2e; } .s1 { stop-color: #2a2a2a; } .s2 { stop-color: #222222; }
-    .muted { fill: #a3a3a3; } .dim { fill: #6b6b6b; } .fg { fill: #f2f2f2; }
-    .accent { fill: #E08A6A; } .green { fill: #7cc47f; }
-    .chip { fill: #212121; stroke: #333333; } .box { stroke: #3d3d3d; } .card { fill: url(#glow); stroke: #D97757; }
-    .cursor { fill: #f2f2f2; }
+    /* GitHub Primer palette: dark (default) and light */
+    .bg { fill: #0d1117; } .frame { stroke: #30363d; } .s1 { stop-color: #161b22; } .s2 { stop-color: #161b22; }
+    .muted { fill: #9198a1; } .dim { fill: #656c76; } .fg { fill: #f0f6fc; }
+    .accent { fill: #4493f8; } .green { fill: #3fb950; }
+    .chip { fill: #151b23; stroke: #3d444d; } .box { stroke: #3d444d; } .card { fill: url(#glow); stroke: #1f6feb; }
+    .cursor { fill: #f0f6fc; }
     @media (prefers-color-scheme: light) {
-      .bg { fill: #fbfaf8; } .frame { stroke: #e2ded8; } .s1 { stop-color: #f1eee9; } .s2 { stop-color: #ebe7e1; }
-      .muted { fill: #5c5c5c; } .dim { fill: #9a9690; } .fg { fill: #1f1f1f; }
-      .accent { fill: #C15F3C; } .green { fill: #3f8f45; }
-      .chip { fill: #f2efea; stroke: #e2ded8; } .box { stroke: #d6d1ca; } .cursor { fill: #1f1f1f; }
+      .bg { fill: #ffffff; } .frame { stroke: #d1d9e0; } .s1 { stop-color: #f6f8fa; } .s2 { stop-color: #f6f8fa; }
+      .muted { fill: #59636e; } .dim { fill: #818b98; } .fg { fill: #1f2328; }
+      .accent { fill: #0969da; } .green { fill: #1a7f37; }
+      .chip { fill: #f6f8fa; stroke: #d1d9e0; } .box { stroke: #d1d9e0; } .card { stroke: #0969da; }
+      .cursor { fill: #1f2328; }
     }
     .in { opacity: 0; animation: in .4s ease-out forwards; }
     @keyframes in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
@@ -33,7 +35,7 @@
   <rect x=".5" y=".5" width="899" height="1258" rx="12" class="bg frame" stroke-width="1"/>
   <path d="M1 38V13a12 12 0 0 1 12-12h874a12 12 0 0 1 12 12V38z" fill="url(#bar)"/>
   <line x1="1" y1="38.5" x2="899" y2="38.5" class="frame"/>
-  <circle cx="22" cy="19" r="6" fill="#ff5f57"/><circle cx="42" cy="19" r="6" fill="#febc2e"/><circle cx="62" cy="19" r="6" fill="#28c840"/>
+  <circle cx="22" cy="19" r="6" fill="#f85149"/><circle cx="42" cy="19" r="6" fill="#d29922"/><circle cx="62" cy="19" r="6" fill="#3fb950"/>
   <text x="450" y="24" text-anchor="middle" class="muted" font-size="12">shlok@india: ~/theshloksschauhan</text>
   <text x="880" y="24" text-anchor="end" class="dim" font-size="11">session #1</text>
 
@@ -41,8 +43,8 @@
   <text x="42" y="86" class="accent" font-size="17">✻ <tspan class="fg" font-weight="bold" font-size="16">Welcome back, Shlok!</tspan></text>
   <text x="42" y="111" class="muted" font-size="12">20 repos · 8 followers · ★ 3 · Thu 26 Nov 2026</text>
   <text x="512" y="66" class="dim" font-size="11">languages across my repos</text>
-  <g clip-path="url(#langclip)"><rect x="512.0" y="78" width="206.4" height="8" fill="#3776AB"/><rect x="720.4" y="78" width="92.7" height="8" fill="#F7DF1E"/><rect x="815.2" y="78" width="16.9" height="8" fill="#00599C"/><rect x="834.1" y="78" width="16.9" height="8" fill="#00ADD8"/><rect x="853.1" y="78" width="16.9" height="8" fill="#2496ED"/></g>
-  <circle cx="516" cy="106" r="3.5" fill="#3776AB"/><text x="523" y="110" class="muted" font-size="11">Python</text><circle cx="583" cy="106" r="3.5" fill="#F7DF1E"/><text x="590" y="110" class="muted" font-size="11">JavaScript</text><circle cx="677" cy="106" r="3.5" fill="#00599C"/><text x="684" y="110" class="muted" font-size="11">C++</text><circle cx="724" cy="106" r="3.5" fill="#00ADD8"/><text x="731" y="110" class="muted" font-size="11">Go</text><circle cx="764" cy="106" r="3.5" fill="#2496ED"/><text x="771" y="110" class="muted" font-size="11">Dockerfile</text>
+  <g clip-path="url(#langclip)"><rect x="512.0" y="78" width="206.4" height="8" fill="#3572A5"/><rect x="720.4" y="78" width="92.7" height="8" fill="#f1e05a"/><rect x="815.2" y="78" width="16.9" height="8" fill="#f34b7d"/><rect x="834.1" y="78" width="16.9" height="8" fill="#00ADD8"/><rect x="853.1" y="78" width="16.9" height="8" fill="#384d54"/></g>
+  <circle cx="516" cy="106" r="3.5" fill="#3572A5"/><text x="523" y="110" class="muted" font-size="11">Python</text><circle cx="583" cy="106" r="3.5" fill="#f1e05a"/><text x="590" y="110" class="muted" font-size="11">JavaScript</text><circle cx="677" cy="106" r="3.5" fill="#f34b7d"/><text x="684" y="110" class="muted" font-size="11">C++</text><circle cx="724" cy="106" r="3.5" fill="#00ADD8"/><text x="731" y="110" class="muted" font-size="11">Go</text><circle cx="764" cy="106" r="3.5" fill="#384d54"/><text x="771" y="110" class="muted" font-size="11">Dockerfile</text>
 
 <g class="in" style="animation-delay:0.20s"><text x="28" y="172" class="muted"><tspan class="accent">❯</tspan> <tspan class="fg" font-weight="bold">whoami</tspan></text></g>
 <g class="in" style="animation-delay:0.26s"><text x="28" y="193" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Bash</tspan><tspan class="dim">(</tspan>whoami --verbose<tspan class="dim">)</tspan></text></g>
@@ -74,12 +76,12 @@
 <g class="in" style="animation-delay:1.82s"><text x="66" y="779" class="muted">Containerized tasks for a benchmark of frontier AI coding agents</text></g>
 <g class="in" style="animation-delay:1.88s"><text x="66" y="805" class="muted"><tspan class="dim">+ ats-hris-integration · recruiting-workflow-engine · deep-packet-analyzer · +6 more</tspan></text></g>
 <g class="in" style="animation-delay:1.94s"><text x="28" y="838" class="muted"><tspan class="accent">❯</tspan> <tspan class="fg" font-weight="bold">git log --all-repos --recent</tspan></text></g>
-<g class="in" style="animation-delay:2.00s"><text x="28" y="859" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>careeros-ai-job-platform<tspan class="dim">)</tspan></text><text x="872" y="859" text-anchor="end" class="dim" font-size="12">1d ago</text></g>
-<g class="in" style="animation-delay:2.06s"><text x="44" y="880" class="dim">⎿</text><text x="66" y="880" class="muted">Validate LLM output with Pydantic; replace silent mock fallback with explicit DEMO_MODE</text></g>
-<g class="in" style="animation-delay:2.12s"><text x="28" y="901" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>multi-domain-support-triage<tspan class="dim">)</tspan></text><text x="872" y="901" text-anchor="end" class="dim" font-size="12">1d ago</text></g>
-<g class="in" style="animation-delay:2.18s"><text x="44" y="922" class="dim">⎿</text><text x="66" y="922" class="muted">Fix company tagging when a parent folder is named claude/visa/hackerrank</text></g>
-<g class="in" style="animation-delay:2.24s"><text x="28" y="943" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>distrocache-distributed-kv<tspan class="dim">)</tspan></text><text x="872" y="943" text-anchor="end" class="dim" font-size="12">30d ago</text></g>
-<g class="in" style="animation-delay:2.30s"><text x="44" y="964" class="dim">⎿</text><text x="66" y="964" class="muted">fix: checker runner retries a transient /metrics poll and never exits 0 without a verdict</text></g>
+<g class="in" style="animation-delay:2.00s"><text x="28" y="859" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>project-terminus-tasks<tspan class="dim">)</tspan></text><text x="872" y="859" text-anchor="end" class="dim" font-size="12">45m ago</text></g>
+<g class="in" style="animation-delay:2.06s"><text x="44" y="880" class="dim">⎿</text><text x="66" y="880" class="muted">README: document task layout and local verification</text></g>
+<g class="in" style="animation-delay:2.12s"><text x="28" y="901" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>careeros-ai-job-platform<tspan class="dim">)</tspan></text><text x="872" y="901" text-anchor="end" class="dim" font-size="12">1d ago</text></g>
+<g class="in" style="animation-delay:2.18s"><text x="44" y="922" class="dim">⎿</text><text x="66" y="922" class="muted">Validate LLM output with Pydantic; replace silent mock fallback with explicit DEMO_MODE</text></g>
+<g class="in" style="animation-delay:2.24s"><text x="28" y="943" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Push</tspan><tspan class="dim">(</tspan>multi-domain-support-triage<tspan class="dim">)</tspan></text><text x="872" y="943" text-anchor="end" class="dim" font-size="12">1d ago</text></g>
+<g class="in" style="animation-delay:2.30s"><text x="44" y="964" class="dim">⎿</text><text x="66" y="964" class="muted">Fix company tagging when a parent folder is named claude/visa/hackerrank</text></g>
 <g class="in" style="animation-delay:2.36s"><text x="28" y="997" class="muted"><tspan class="accent">❯</tspan> <tspan class="fg" font-weight="bold">cat toolbox.txt</tspan></text></g>
 <g class="in" style="animation-delay:2.42s"><text x="28" y="1018" class="muted"><tspan class="green">⏺</tspan> <tspan class="fg">Read</tspan><tspan class="dim">(</tspan>toolbox.txt<tspan class="dim">)</tspan></text></g>
 <g class="in" style="animation-delay:2.48s"><text x="44" y="1043" class="dim">⎿</text><rect x="152.0" y="1029" width="61.2" height="20" rx="10" class="chip"/><text x="161.0" y="1043" class="fg" font-size="13">Python</text><rect x="219.2" y="1029" width="90.0" height="20" rx="10" class="chip"/><text x="228.2" y="1043" class="fg" font-size="13">TypeScript</text><rect x="315.2" y="1029" width="90.0" height="20" rx="10" class="chip"/><text x="324.2" y="1043" class="fg" font-size="13">JavaScript</text><rect x="411.2" y="1029" width="39.6" height="20" rx="10" class="chip"/><text x="420.2" y="1043" class="fg" font-size="13">C++</text><rect x="456.8" y="1029" width="32.4" height="20" rx="10" class="chip"/><text x="465.8" y="1043" class="fg" font-size="13">Go</text><text x="66" y="1043" class="accent">languages</text></g>
