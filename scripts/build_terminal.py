@@ -165,7 +165,7 @@ def build(pushes, langs, today):
 
 
 if __name__ == "__main__":
-    svg = build(recent_pushes(), languages(), dt.date.today())
+    svg = build(recent_pushes(), languages(), dt.datetime.now(dt.timezone(dt.timedelta(hours=5, minutes=30))).date())
     with open(OUT, "w", encoding="utf-8", newline="\n") as f:
         f.write(svg)
     print("wrote", os.path.abspath(OUT))
